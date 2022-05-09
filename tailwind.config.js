@@ -10,6 +10,9 @@ module.exports = {
       accent: "#0F7FFF",
     },
     extend: {
+      spacing: {
+        herospc: "1.785rem",
+      },
       fontFamily: {
         Oswald: ['"Oswald"'],
         Oxygen: ['"Oxygen"'],
