@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <div className="relative">
-      <div className="flex flex-row">
+      <div className="flex  justify-center">
         <svg
           viewBox="0 0 110 110"
           class="absolute left-8 -top-5/4 -translate-x-1/4 h-40 w-40 text-accent absolute"
@@ -21,7 +21,7 @@ export default function Hero() {
         <div className="flex flex-col justify-end text-primarywhite">
           <div className="ml-4 font-Oswald text-3xl font-bold">
             <div className="">TOBIAS</div>
-            <div className="">BERGSTRÖM</div>
+            <div className="ml-herospc -mt-2">BERGSTRÖM</div>
           </div>
           <div className=" font-Oxygen">UX DESIGNER | DEVELOPER</div>
         </div>
