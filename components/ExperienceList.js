@@ -1,6 +1,6 @@
 export default function ExperienceList() {
   return (
-    <div className="relative felx justify-center">
+    <div className="relative">
       <div className="flex flex-row justify-between text-primarywhite font-Oswald font-normal">
         <div>
           <div>ACTIVE</div>
@@ -9,8 +9,13 @@ export default function ExperienceList() {
         </div>
         <div className="w-full flex flex-col justify-center">
           <div>
-            <svg viewBox="0 0 110 110" className=" fill-accent justify-center">
-              <rect width="90%" height={1} />
+            <svg
+              viewBox="0 0 1 1"
+              width="100%"
+              height="24"
+              className=" fill-accent"
+            >
+              <rect width="90%" height="1px" />
             </svg>
           </div>
           <div>LINE 2</div>
