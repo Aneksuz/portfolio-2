@@ -11,13 +11,17 @@ export default function ExperienceList() {
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-6 w-[100%] stroke-accent dark:stroke-accentdark"
-            width="100%"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
             stroke-width="2"
           >
-            <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M18 12H6"
+              width="100"
+            />
           </svg>
           <div>LINE 2</div>
           <div>LINE 1</div>
