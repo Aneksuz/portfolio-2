@@ -5,9 +5,21 @@ export default function Navbar() {
     <div className="flex justify-center">
       <nav className="bg-primarywhite/[0.75] backdrop-blur-sm p-5 fixed w-full max-w-3xl dark:bg-primaryblack/[0.75]">
         <div>
-          <div className="flex justify-between">
-            <div>
-              <Image src="/Logo.svg" width="50" height="50" />
+          <div className="flex justify-between items-center">
+            <div className="flex flex-row items-center">
+              <div>
+                <button className="w-[50px] h-[50px] mr-4 border-accent  border-2 flex justify-center items-center rounded-full "></button>
+              </div>
+
+              <a className="mx-2 font-bold font-Oswald text-[1.25rem] text-primaryblack dark:text-primarywhite hidden md:inline">
+                ABOUT
+              </a>
+              <a className="mx-2 font-bold font-Oswald text-[1.25rem] text-primaryblack dark:text-primarywhite hidden md:inline">
+                EXPERIENCE
+              </a>
+              <a className="mx-2 font-bold font-Oswald text-[1.25rem] text-primaryblack dark:text-primarywhite hidden md:inline">
+                WORKS
+              </a>
             </div>
             <div className="flex">
               <button className="w-[50px] h-[50px] mr-1  border-primarywhite stroke-primarywhite border-2 justify-center items-center rounded-full hidden dark:flex">
@@ -42,7 +54,7 @@ export default function Navbar() {
                 </svg>
               </button>
 
-              <button className="w-[50px] h-[50px] border-primaryblack stroke-primaryblack dark:border-primarywhite dark:stroke-primarywhite border-2 flex justify-center items-center rounded-full">
+              <button className="w-[50px] h-[50px] border-primaryblack stroke-primaryblack dark:border-primarywhite dark:stroke-primarywhite border-2 flex justify-center items-center rounded-full md:hidden">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="h-6 w-6"
