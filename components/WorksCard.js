@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function WorksCard({ title, content, alt, path }) {
   return (
-    <div className="relative w-[350px] m-2">
+    <div className="relative m-2">
       <div className="group justify-center flex-col text-center">
         <Image
           className="rounded-[40px]"
