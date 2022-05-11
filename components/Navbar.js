@@ -1,7 +1,9 @@
+import Link from "next/link";
+
 export default function Navbar() {
   return (
-    <div className="flex justify-center">
-      <nav className="bg-primarywhite/[0.75] backdrop-blur-sm p-5 fixed w-full max-w-3xl dark:bg-primaryblack/[0.75]">
+    <div className="flex justify-center ">
+      <nav className="bg-primarywhite/[0.75] backdrop-blur-sm p-5 fixed w-full max-w-3xl dark:bg-primaryblack/[0.75] z-10">
         <div>
           <div className="flex justify-between items-center">
             <div className="flex flex-row items-center">
@@ -72,15 +74,23 @@ export default function Navbar() {
           <div>
             <div className="flex flex-row justify-end">
               <div className="flex flex-col">
-                <a className="mx-2 my-1 font-bold font-Oswald text-[1.25rem] text-primaryblack dark:text-primarywhite text-right">
-                  ABOUT
-                </a>
-                <a className="mx-2 my-1 font-bold font-Oswald text-[1.25rem] text-primaryblack dark:text-primarywhite text-right">
-                  EXPERIENCE
-                </a>
-                <a className="mx-2 my-1 font-bold font-Oswald text-[1.25rem] text-primaryblack dark:text-primarywhite text-right">
-                  WORKS
-                </a>
+                <Link href="#about">
+                  <a className="mx-2 my-1 font-bold font-Oswald text-[1.25rem] text-primaryblack dark:text-primarywhite text-right">
+                    ABOUT
+                  </a>
+                </Link>
+
+                <Link href="#experience">
+                  <a className="mx-2 my-1 font-bold font-Oswald text-[1.25rem] text-primaryblack dark:text-primarywhite text-right">
+                    EXPERIENCE
+                  </a>
+                </Link>
+
+                <Link href="#works">
+                  <a className="mx-2 my-1 font-bold font-Oswald text-[1.25rem] text-primaryblack dark:text-primarywhite text-right">
+                    WORKS
+                  </a>
+                </Link>
               </div>
             </div>
           </div>
