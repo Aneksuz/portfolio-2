@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function Navbar() {
   return (
     <div className="flex justify-center">
@@ -69,6 +67,21 @@ export default function Navbar() {
                   />
                 </svg>
               </button>
+            </div>
+          </div>
+          <div>
+            <div className="flex flex-row justify-end">
+              <div className="flex flex-col">
+                <a className="mx-2 my-1 font-bold font-Oswald text-[1.25rem] text-primaryblack dark:text-primarywhite text-right">
+                  ABOUT
+                </a>
+                <a className="mx-2 my-1 font-bold font-Oswald text-[1.25rem] text-primaryblack dark:text-primarywhite text-right">
+                  EXPERIENCE
+                </a>
+                <a className="mx-2 my-1 font-bold font-Oswald text-[1.25rem] text-primaryblack dark:text-primarywhite text-right">
+                  WORKS
+                </a>
+              </div>
             </div>
           </div>
         </div>
