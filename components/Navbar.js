@@ -1,23 +1,35 @@
 import Link from "next/link";
+import React, { useState } from "react";
 
 export default function Navbar() {
+  const [open, setOpen] = useState(false);
+
   return (
     <div className="flex justify-center ">
-      <nav className="bg-primarywhite/[0.75] backdrop-blur-sm p-5 fixed w-full max-w-3xl dark:bg-primaryblack/[0.75] z-10">
+      <nav className="bg-primarywhite/[0.75] backdrop-blur-sm p-5 fixed w-full max-w-[950px] dark:bg-primaryblack/[0.75] z-10">
         <div>
-          <div className="flex justify-between items-center">
+          <div className="flex justify-between items-center mb-4">
             <div className="flex flex-row items-center">
               <div>
                 <button className="w-[50px] h-[50px] mr-4 border-accent  border-2 flex justify-center items-center rounded-full "></button>
               </div>
 
-              <a className="mx-2 font-bold font-Oswald text-[1.25rem] text-primaryblack dark:text-primarywhite hidden md:inline">
+              <a
+                href="#about"
+                className="mx-2 font-bold font-Oswald text-[1.25rem] text-primaryblack dark:text-primarywhite hidden md:inline"
+              >
                 ABOUT
               </a>
-              <a className="mx-2 font-bold font-Oswald text-[1.25rem] text-primaryblack dark:text-primarywhite hidden md:inline">
+              <a
+                href="#experience"
+                className="mx-2 font-bold font-Oswald text-[1.25rem] text-primaryblack dark:text-primarywhite hidden md:inline"
+              >
                 EXPERIENCE
               </a>
-              <a className="mx-2 font-bold font-Oswald text-[1.25rem] text-primaryblack dark:text-primarywhite hidden md:inline">
+              <a
+                href="#works"
+                className="mx-2 font-bold font-Oswald text-[1.25rem] text-primaryblack dark:text-primarywhite hidden md:inline"
+              >
                 WORKS
               </a>
             </div>
@@ -54,45 +66,66 @@ export default function Navbar() {
                 </svg>
               </button>
 
-              <button className="w-[50px] h-[50px] border-primaryblack stroke-primaryblack dark:border-primarywhite dark:stroke-primarywhite border-2 flex justify-center items-center rounded-full md:hidden">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-6 w-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="2"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
-                </svg>
+              <button
+                onClick={() => setOpen(!open)}
+                className="w-[50px] h-[50px] border-primaryblack stroke-primaryblack dark:border-primarywhite dark:stroke-primarywhite border-2 flex justify-center items-center rounded-full md:hidden"
+              >
+                {open ? (
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={2}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M6 18L18 6M6 6l12 12"
+                    />
+                  </svg>
+                ) : (
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4 6h16M4 12h16M4 18h16"
+                    />
+                  </svg>
+                )}
               </button>
             </div>
           </div>
           <div>
-            <div className="flex flex-row justify-end">
-              <div className="flex flex-col">
-                <Link href="#about">
-                  <a className="mx-2 my-1 font-bold font-Oswald text-[1.25rem] text-primaryblack dark:text-primarywhite text-right">
-                    ABOUT
-                  </a>
-                </Link>
+            {open && (
+              <div className="flex flex-row justify-end md:hidden">
+                <div className="flex flex-col">
+                  <Link href="#about">
+                    <a className="mx-2 my-1 font-bold font-Oswald text-[1.25rem] text-primaryblack dark:text-primarywhite text-right">
+                      ABOUT
+                    </a>
+                  </Link>
 
-                <Link href="#experience">
-                  <a className="mx-2 my-1 font-bold font-Oswald text-[1.25rem] text-primaryblack dark:text-primarywhite text-right">
-                    EXPERIENCE
-                  </a>
-                </Link>
+                  <Link href="#experience">
+                    <a className="mx-2 my-1 font-bold font-Oswald text-[1.25rem] text-primaryblack dark:text-primarywhite text-right">
+                      EXPERIENCE
+                    </a>
+                  </Link>
 
-                <Link href="#works">
-                  <a className="mx-2 my-1 font-bold font-Oswald text-[1.25rem] text-primaryblack dark:text-primarywhite text-right">
-                    WORKS
-                  </a>
-                </Link>
+                  <Link href="#works">
+                    <a className="mx-2 my-1 font-bold font-Oswald text-[1.25rem] text-primaryblack dark:text-primarywhite text-right">
+                      WORKS
+                    </a>
+                  </Link>
+                </div>
               </div>
-            </div>
+            )}
           </div>
         </div>
       </nav>
