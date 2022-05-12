@@ -3,7 +3,7 @@ export default function AccentTitle({ title }) {
     <div className="relative">
       <svg
         viewBox="0 0 110 110"
-        class="absolute left-1 -top-1/4 -translate-x-1/2 h-8 w-8 text-accent dark:text-accentdark absolute"
+        class="absolute left-1 -top-1/4 -translate-x-1/2 h-8 w-8 text-accent dark:text-accentdark"
       >
         <circle
           stroke="currentColor"
