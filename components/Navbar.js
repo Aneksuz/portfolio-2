@@ -34,7 +34,7 @@ export default function Navbar() {
               </a>
             </div>
             <div className="flex">
-              <button className="w-[50px] h-[50px] mr-1  border-primarywhite stroke-primarywhite border-2 justify-center items-center rounded-full hidden dark:flex">
+              <button className="w-[50px] h-[50px] mr-1  border-primarywhite stroke-primarywhite opacity-100 hover:opacity-50 border-2 justify-center items-center rounded-full hidden dark:flex">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="h-6 w-6"
@@ -68,7 +68,7 @@ export default function Navbar() {
 
               <button
                 onClick={() => setOpen(!open)}
-                className="w-[50px] h-[50px] border-primaryblack stroke-primaryblack dark:border-primarywhite dark:stroke-primarywhite border-2 flex justify-center items-center rounded-full md:hidden"
+                className="w-[50px] h-[50px] border-primaryblack stroke-primaryblack dark:border-primarywhite dark:stroke-primarywhite  border-2 flex justify-center items-center rounded-full md:hidden"
               >
                 {open ? (
                   <svg
