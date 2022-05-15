@@ -16,25 +16,25 @@ export default function Navbar() {
 
               <a
                 href="#about"
-                className="mx-2 font-bold font-Oswald text-[1.25rem] text-primaryblack dark:text-primarywhite hidden md:inline"
+                className="mx-2 font-bold font-Oswald text-[1.25rem] text-primaryblack dark:text-primarywhite hidden md:inline opacity-100 hover:opacity-50 transition duration-300"
               >
                 ABOUT
               </a>
               <a
                 href="#experience"
-                className="mx-2 font-bold font-Oswald text-[1.25rem] text-primaryblack dark:text-primarywhite hidden md:inline"
+                className="mx-2 font-bold font-Oswald text-[1.25rem] text-primaryblack dark:text-primarywhite hidden md:inline opacity-100 hover:opacity-50 transition duration-300"
               >
                 EXPERIENCE
               </a>
               <a
                 href="#works"
-                className="mx-2 font-bold font-Oswald text-[1.25rem] text-primaryblack dark:text-primarywhite hidden md:inline"
+                className="mx-2 font-bold font-Oswald text-[1.25rem] text-primaryblack dark:text-primarywhite hidden md:inline opacity-100 hover:opacity-50 transition duration-300"
               >
                 WORKS
               </a>
             </div>
             <div className="flex">
-              <button className="w-[50px] h-[50px] mr-1  border-primarywhite stroke-primarywhite opacity-100 hover:opacity-50 border-2 justify-center items-center rounded-full hidden dark:flex">
+              <button className="w-[50px] h-[50px] mr-1  border-primarywhite stroke-primarywhite opacity-100 hover:opacity-50 border-2 justify-center items-center rounded-full hidden dark:flex opacity-100 hover:opacity-50 transition duration-300">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="h-6 w-6"
@@ -50,7 +50,7 @@ export default function Navbar() {
                 </svg>
               </button>
 
-              <button className="w-[50px] h-[50px] mr-1 border-primaryblack stroke-primaryblack border-2 flex justify-center items-center rounded-full dark:hidden">
+              <button className="w-[50px] h-[50px] mr-1 border-primaryblack stroke-primaryblack border-2 flex justify-center items-center rounded-full dark:hidden opacity-100 hover:opacity-50 transition duration-300">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="h-6 w-6"
@@ -68,7 +68,7 @@ export default function Navbar() {
 
               <button
                 onClick={() => setOpen(!open)}
-                className="w-[50px] h-[50px] border-primaryblack stroke-primaryblack dark:border-primarywhite dark:stroke-primarywhite  border-2 flex justify-center items-center rounded-full md:hidden"
+                className="w-[50px] h-[50px] border-primaryblack stroke-primaryblack dark:border-primarywhite dark:stroke-primarywhite  border-2 flex justify-center items-center rounded-full md:hidden opacity-100 hover:opacity-50 transition duration-300"
               >
                 {open ? (
                   <svg
@@ -107,19 +107,19 @@ export default function Navbar() {
               <div className="flex flex-row justify-end md:hidden">
                 <div className="flex flex-col">
                   <Link href="#about">
-                    <a className="mx-2 my-1 font-bold font-Oswald text-[1.25rem] text-primaryblack dark:text-primarywhite text-right">
+                    <a className="mx-2 my-1 font-bold font-Oswald text-[1.25rem] text-primaryblack dark:text-primarywhite text-right opacity-100 hover:opacity-50 transition duration-300">
                       ABOUT
                     </a>
                   </Link>
 
                   <Link href="#experience">
-                    <a className="mx-2 my-1 font-bold font-Oswald text-[1.25rem] text-primaryblack dark:text-primarywhite text-right">
+                    <a className="mx-2 my-1 font-bold font-Oswald text-[1.25rem] text-primaryblack dark:text-primarywhite text-right opacity-100 hover:opacity-50 transition duration-300">
                       EXPERIENCE
                     </a>
                   </Link>
 
                   <Link href="#works">
-                    <a className="mx-2 my-1 font-bold font-Oswald text-[1.25rem] text-primaryblack dark:text-primarywhite text-right">
+                    <a className="mx-2 my-1 font-bold font-Oswald text-[1.25rem] text-primaryblack dark:text-primarywhite text-right opacity-100 hover:opacity-50 transition duration-300">
                       WORKS
                     </a>
                   </Link>
