@@ -6,15 +6,15 @@ export default function Hero() {
       <div className="flex  justify-center w-full max-w-3xl">
         <svg
           viewBox="0 0 110 110"
-          class="absolute left-8 -top-5/4 -translate-x-1/4 h-40 w-40 text-accent dark:text-accentdark absolute"
+          className="absolute left-8 -top-5/4 -translate-x-1/4 h-40 w-40 text-accent dark:text-accentdark absolute"
         >
           <circle
             stroke="currentColor"
-            stroke-width="4"
+            strokeWidth="4"
             cx="55"
             cy="55"
             r="50"
-            fill-opacity={0}
+            fillOpacity={0}
           />
         </svg>
         <Image src="/Tobias-Cutout 1.png" width={142} height={151} />
