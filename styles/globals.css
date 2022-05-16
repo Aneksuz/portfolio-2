@@ -21,4 +21,5 @@ a {
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 125px;
 }
