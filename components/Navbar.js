@@ -1,11 +1,13 @@
 import Link from "next/link";
 import React, { useState } from "react";
+import { useTheme } from "next-themes";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const { theme, setTheme } = useTheme();
 
   return (
-    <div className="flex justify-center ">
+    <div className="flex justify-center">
       <nav className="bg-primarywhite/[0.75] backdrop-blur-sm p-5 fixed w-full max-w-[950px] dark:bg-primaryblack/[0.75] z-10">
         <div>
           <div className="flex justify-between items-center mb-4">
@@ -34,7 +36,10 @@ export default function Navbar() {
               </a>
             </div>
             <div className="flex">
-              <button className="w-[50px] h-[50px] mr-1  border-primarywhite stroke-primarywhite opacity-100 hover:opacity-50 border-2 justify-center items-center rounded-full hidden dark:flex opacity-100 hover:opacity-50 transition duration-300">
+              <button
+                onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+                className="w-[50px] h-[50px] mr-1  border-primarywhite stroke-primarywhite opacity-100 hover:opacity-50 border-2 justify-center items-center rounded-full hidden dark:flex opacity-100 hover:opacity-50 transition duration-300"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="h-6 w-6"
@@ -50,7 +55,10 @@ export default function Navbar() {
                 </svg>
               </button>
 
-              <button className="w-[50px] h-[50px] mr-1 border-primaryblack stroke-primaryblack border-2 flex justify-center items-center rounded-full dark:hidden opacity-100 hover:opacity-50 transition duration-300">
+              <button
+                onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+                className="w-[50px] h-[50px] mr-1 border-primaryblack stroke-primaryblack border-2 flex justify-center items-center rounded-full dark:hidden opacity-100 hover:opacity-50 transition duration-300"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="h-6 w-6"
