@@ -23,7 +23,7 @@ export default function Hero() {
             <div className="">TOBIAS</div>
             <div className="ml-herospc -mt-2">BERGSTRÖM</div>
           </div>
-          <div className=" font-Oxygen">UX DESIGNER | DEVELOPER</div>
+          <div className=" font-Oxygen">Ux Designer | Developer</div>
         </div>
       </div>
     </div>
