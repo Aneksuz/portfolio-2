@@ -27,13 +27,13 @@ export default function Home() {
       <div id="about" className="bg-primarywhite dark:bg-primaryblack">
         <Navbar />
 
-        <div className="p-5 flex flex-col items-center">
+        <div className="flex flex-col items-center p-5">
           <div className="mb-20 mt-24 items-center">
             <Hero />
           </div>
           <div className="mb-20 max-w-4xl">
             <AccentTitle title={"ABOUT"} />
-            <p className="text-primaryblack dark:text-primarywhite font-Oxygen leading-7 mb-4">
+            <p className="mb-4 font-Oxygen leading-7 text-primaryblack dark:text-primarywhite">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -42,7 +42,7 @@ export default function Home() {
               nulla pariatur. Excepteur sint occaecat cupidatat non proident,
               sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
-            <div className="flex flex-row justify-around items-center">
+            <div className="flex flex-row items-center justify-around">
               <button className="flex flex-row">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -57,7 +57,7 @@ export default function Home() {
                     d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
                   />
                 </svg>
-                <div className="text-accent dark:text-accentdark mx-1 font-Oswald font-bold">
+                <div className="mx-1 font-Oswald font-bold text-accent dark:text-accentdark">
                   CV
                 </div>
               </button>
@@ -69,7 +69,7 @@ export default function Home() {
           </div>
           <div className="mb-40" id="works">
             <AccentTitle title={"WORKS"} />
-            <div className="flex flex-wrap items-center justify-center  max-w-4xl">
+            <div className="flex max-w-4xl flex-wrap items-center  justify-center">
               <WorksCard
                 title="DEBRIS DANGER"
                 content="A solo developed videogame MVP currently in the works"
@@ -91,12 +91,12 @@ export default function Home() {
             </div>
           </div>
           <div className="flex justify-center">
-            <div className="flex flex-col justify-center w-64">
+            <div className="flex w-64 flex-col justify-center">
               <div>
                 <div className="flex justify-between">
                   <Link href="https://www.linkedin.com/in/tobias-bergstr%C3%B6m-250220194/">
                     <a
-                      className="opacity-100 hover:opacity-50 transition duration-300"
+                      className="opacity-100 transition duration-300 hover:opacity-50"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -120,7 +120,7 @@ export default function Home() {
 
                   <Link href="mailto:tobiasbergstrom@outlook.com">
                     <a
-                      className="opacity-100 hover:opacity-50 transition duration-300 w-[50px] h-[50px] bg-accent dark:bg-accentdark flex justify-center items-center rounded-full"
+                      className="flex h-[50px] w-[50px] items-center justify-center rounded-full bg-accent opacity-100 transition duration-300 hover:opacity-50 dark:bg-accentdark"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -143,7 +143,7 @@ export default function Home() {
 
                   <Link href="mailto:tobiasbergstrom@outlook.com">
                     <a
-                      className="opacity-100 hover:opacity-50 transition duration-300"
+                      className="opacity-100 transition duration-300 hover:opacity-50"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -168,7 +168,7 @@ export default function Home() {
                 <div className="flex justify-around">
                   <Link href="https://twitter.com/Mangamaskinen">
                     <a
-                      className="opacity-100 hover:opacity-50 transition duration-300"
+                      className="opacity-100 transition duration-300 hover:opacity-50"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -192,7 +192,7 @@ export default function Home() {
 
                   <Link href="https://github.com/Aneksuz">
                     <a
-                      className="opacity-100 hover:opacity-50 transition duration-300"
+                      className="opacity-100 transition duration-300 hover:opacity-50"
                       target="_blank"
                       rel="noopener noreferrer"
                     >

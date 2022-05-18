@@ -3,10 +3,10 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <div className="relative ">
-      <div className="flex  justify-center w-full max-w-3xl">
+      <div className="flex  w-full max-w-3xl justify-center">
         <svg
           viewBox="0 0 110 110"
-          className="absolute left-8 -top-5/4 -translate-x-1/4 h-40 w-40 text-accent dark:text-accentdark absolute"
+          className="-top-5/4 absolute left-8 h-40 w-40 -translate-x-1/4 text-accent dark:text-accentdark"
         >
           <circle
             stroke="currentColor"
