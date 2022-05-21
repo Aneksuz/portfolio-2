@@ -24,7 +24,10 @@ export default function Home() {
         />
       </Head>
 
-      <div id="about" className="bg-primarywhite dark:bg-primaryblack">
+      <div
+        id="about"
+        className="bg-primarywhite transition duration-500 dark:bg-primaryblack"
+      >
         <Navbar />
 
         <div className="flex flex-col items-center p-5">
@@ -34,13 +37,14 @@ export default function Home() {
           <div className="mb-20 max-w-4xl">
             <AccentTitle title={"ABOUT"} />
             <p className="mb-4 font-Oxygen leading-7 text-primaryblack dark:text-primarywhite">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Tobias is a UX Desginer and Developer based in Umeå with a passion
+              for Developing webapps, games and desgins. His skillset is diverse
+              and this grants him a unique edge in problemsolving of all kinds.
+              He is currently studying for a masters degree in Interaction and
+              Design at Umeå University. In his free time he enjoys spending
+              time with friends, programming, playing video-games and listening
+              to music. Below you can find his CV for further details about his
+              career.
             </p>
             <div className="flex flex-row items-center justify-around">
               <button className="flex flex-row">
