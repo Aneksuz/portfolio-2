@@ -8,29 +8,29 @@ export default function Navbar() {
 
   return (
     <div className="flex justify-center">
-      <nav className="bg-primarywhite/[0.75] backdrop-blur-sm p-5 fixed w-full max-w-[950px] dark:bg-primaryblack/[0.75] z-10">
+      <nav className="fixed z-10 w-full max-w-[950px] bg-primarywhite/[0.75] p-5 backdrop-blur-sm transition duration-500 dark:bg-primaryblack/[0.75]">
         <div>
-          <div className="flex justify-between items-center mb-4">
+          <div className="mb-4 flex items-center justify-between">
             <div className="flex flex-row items-center">
               <div>
-                <button className="w-[50px] h-[50px] mr-4 border-accent  border-2 flex justify-center items-center rounded-full "></button>
+                <button className="mr-4 flex h-[50px] w-[50px]  items-center justify-center rounded-full border-2 border-accent "></button>
               </div>
 
               <a
                 href="#about"
-                className="mx-2 font-bold font-Oswald text-[1.25rem] text-primaryblack dark:text-primarywhite hidden md:inline opacity-100 hover:opacity-50 transition duration-300"
+                className="mx-2 hidden font-Oswald text-[1.25rem] font-bold text-primaryblack opacity-100 transition duration-300 hover:opacity-50 dark:text-primarywhite md:inline"
               >
                 ABOUT
               </a>
               <a
                 href="#experience"
-                className="mx-2 font-bold font-Oswald text-[1.25rem] text-primaryblack dark:text-primarywhite hidden md:inline opacity-100 hover:opacity-50 transition duration-300"
+                className="mx-2 hidden font-Oswald text-[1.25rem] font-bold text-primaryblack opacity-100 transition duration-300 hover:opacity-50 dark:text-primarywhite md:inline"
               >
                 EXPERIENCE
               </a>
               <a
                 href="#works"
-                className="mx-2 font-bold font-Oswald text-[1.25rem] text-primaryblack dark:text-primarywhite hidden md:inline opacity-100 hover:opacity-50 transition duration-300"
+                className="mx-2 hidden font-Oswald text-[1.25rem] font-bold text-primaryblack opacity-100 transition duration-300 hover:opacity-50 dark:text-primarywhite md:inline"
               >
                 WORKS
               </a>
@@ -38,7 +38,7 @@ export default function Navbar() {
             <div className="flex">
               <button
                 onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-                className="w-[50px] h-[50px] mr-1  border-primarywhite stroke-primarywhite opacity-100 hover:opacity-50 border-2 justify-center items-center rounded-full hidden dark:flex opacity-100 hover:opacity-50 transition duration-300"
+                className="mr-1 hidden h-[50px]  w-[50px] items-center justify-center rounded-full border-2 border-primarywhite stroke-primarywhite opacity-100 opacity-100 transition duration-300 hover:opacity-50 hover:opacity-50 dark:flex"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -57,7 +57,7 @@ export default function Navbar() {
 
               <button
                 onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-                className="w-[50px] h-[50px] mr-1 border-primaryblack stroke-primaryblack border-2 flex justify-center items-center rounded-full dark:hidden opacity-100 hover:opacity-50 transition duration-300"
+                className="mr-1 flex h-[50px] w-[50px] items-center justify-center rounded-full border-2 border-primaryblack stroke-primaryblack opacity-100 transition duration-300 hover:opacity-50 dark:hidden"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -76,7 +76,7 @@ export default function Navbar() {
 
               <button
                 onClick={() => setOpen(!open)}
-                className="w-[50px] h-[50px] border-primaryblack stroke-primaryblack dark:border-primarywhite dark:stroke-primarywhite  border-2 flex justify-center items-center rounded-full md:hidden opacity-100 hover:opacity-50 transition duration-300"
+                className="flex h-[50px] w-[50px] items-center justify-center rounded-full  border-2 border-primaryblack stroke-primaryblack opacity-100 transition duration-300 hover:opacity-50 dark:border-primarywhite dark:stroke-primarywhite md:hidden"
               >
                 {open ? (
                   <svg
@@ -115,19 +115,19 @@ export default function Navbar() {
               <div className="flex flex-row justify-end md:hidden">
                 <div className="flex flex-col">
                   <Link href="#about">
-                    <a className="mx-2 my-1 font-bold font-Oswald text-[1.25rem] text-primaryblack dark:text-primarywhite text-right opacity-100 hover:opacity-50 transition duration-300">
+                    <a className="mx-2 my-1 text-right font-Oswald text-[1.25rem] font-bold text-primaryblack opacity-100 transition duration-300 hover:opacity-50 dark:text-primarywhite">
                       ABOUT
                     </a>
                   </Link>
 
                   <Link href="#experience">
-                    <a className="mx-2 my-1 font-bold font-Oswald text-[1.25rem] text-primaryblack dark:text-primarywhite text-right opacity-100 hover:opacity-50 transition duration-300">
+                    <a className="mx-2 my-1 text-right font-Oswald text-[1.25rem] font-bold text-primaryblack opacity-100 transition duration-300 hover:opacity-50 dark:text-primarywhite">
                       EXPERIENCE
                     </a>
                   </Link>
 
                   <Link href="#works">
-                    <a className="mx-2 my-1 font-bold font-Oswald text-[1.25rem] text-primaryblack dark:text-primarywhite text-right opacity-100 hover:opacity-50 transition duration-300">
+                    <a className="mx-2 my-1 text-right font-Oswald text-[1.25rem] font-bold text-primaryblack opacity-100 transition duration-300 hover:opacity-50 dark:text-primarywhite">
                       WORKS
                     </a>
                   </Link>

@@ -14,7 +14,7 @@ export default function AccentTitle({ title }) {
           fillOpacity={0}
         />
       </svg>
-      <div className=" isolate bg-primarywhite p-0 font-Oswald text-3xl font-bold text-primaryblack dark:bg-primaryblack dark:text-primarywhite">
+      <div className=" isolate bg-primarywhite p-0 font-Oswald text-3xl font-bold text-primaryblack transition duration-500 dark:bg-primaryblack dark:text-primarywhite">
         {title}
       </div>
     </div>

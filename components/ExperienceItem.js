@@ -4,8 +4,8 @@ export default function ExperienceItem({ title, year, styled }) {
       <div className="relative">
         <div className="flex flex-row justify-between">
           <div>{title}</div>
-          <div className="block h-px w-full flex-1 bg-accent/50 dark:bg-accentdark/50 mx-4 self-center"></div>
-          <div className=" border-accent dark:border-r-accentdark border-2 rounded-full px-2 text-accent dark:text-accentdark">
+          <div className="mx-4 block h-px w-full flex-1 self-center bg-accent/50 dark:bg-accentdark/50"></div>
+          <div className=" rounded-full border-2 border-accent px-2 text-accent dark:border-r-accentdark dark:text-accentdark">
             NOW
           </div>
         </div>
@@ -18,7 +18,7 @@ export default function ExperienceItem({ title, year, styled }) {
       <div className="relative">
         <div className="flex flex-row justify-between">
           <div>{title}</div>
-          <div className="block h-px w-full flex-1 bg-primaryblack/50 dark:bg-primarywhite/50 mx-4 self-center"></div>
+          <div className="mx-4 block h-px w-full flex-1 self-center bg-primaryblack/50 transition duration-500 dark:bg-primarywhite/50"></div>
           <div>{year}</div>
         </div>
       </div>
