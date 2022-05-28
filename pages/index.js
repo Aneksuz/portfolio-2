@@ -12,6 +12,7 @@ export default function Home() {
   return (
     <div className="transition duration-300">
       <Head>
+        <title>Portfolio - Tobias Bergström</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
